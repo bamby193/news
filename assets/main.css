@@ -1,0 +1,79 @@
+body{
+    font-family: 'Texturina', serif;
+    background-color: rgb(214, 230, 230);
+}
+.bg-light{
+    background-color: chartreuse;
+}
+.news-tool-select{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.navbar{
+    background-color: rgb(87, 106, 190);
+}
+.news-tool-title{
+    text-align: center;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #1f5e17;
+    font-weight: 600;
+}
+
+.btn-loading i.fas{
+    display: none;
+}
+
+.btn-loading.loading i.fas{
+    display: inline-block;
+}
+
+.btn-loading.loading span{
+    padding-left: 0.5rem;
+    transition: all ease-in-out 0.3s;
+}
+
+.news-tool-process{
+    margin-top: 1rem;
+    max-height: 400px;
+    width: 100%;
+    overflow: auto;
+}
+
+.news-tool-process p{
+    margin-bottom: 0.5rem;
+}
+
+.news-image{
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+}
+.table td{
+    font-weight: normal;
+}
+
+.no-wrap{
+    white-space: nowrap;
+}
+
+.modal input, .modal textarea, .modal label{
+    font-size: 14px;
+}
+
+@media (min-width: 576px){
+    .modal-dialog {
+        max-width: 600px;
+        margin: 1.75rem auto;
+    }
+    .dropdown:hover>.dropdown-menu {
+        display: block;
+      }
+      
+      .dropdown>.dropdown-toggle:active {
+        /*Without this, clicking will make it sticky*/
+          pointer-events: none;
+      }
+}
